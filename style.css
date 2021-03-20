@@ -1,0 +1,22 @@
+.jumbotron {
+  background-image: url(img/jumbotron.jpg);
+  padding-top: 9rem;
+}
+h1 {
+  font-size: 50px;
+}
+.arufati {
+  padding-top: 10rem;
+}
+section {
+  padding-top: 5rem;
+}
+h3 {
+  font-size: 60px;
+}
+h4 {
+  font-size: 35px;
+}
+#contact {
+  background-color: #e2edff;
+}
