@@ -80,32 +80,22 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-6">
             <form>
-              <fieldset>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name" />
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">No.WhatsApp</label>
-                  <input type="number" class="form-control" id="phone" />
-                </div>
-                <div class="mb-3">
-                  <label for="lokasi" class="form-label">Lokasi Pengantaran</label>
-                  <input type="text" class="form-control" id="lokasi" />
-                </div>
-
-                <div class="mb-3">
-                  <label for="minuman" class="form-label">Minuman</label>
-                  <select id="minuman" class="form-select">
-                    <option>Es teh</option>
-                    <option>Teh Hangat</option>
-                  </select>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </fieldset>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="number" class="form-label">Nomor WhatsApp</label>
+                <input type="number" class="form-control" id="number" aria-describedby="number" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesanan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <div id="passwordHelpBlock" class="form-text">Format pemesanan dengan cara : Pesanan1 jumlah, Pesanan2 jumlah dst.</div>
+              </div>
+              <button type="submit" class="btn btn-info text-white">Submit</button>
             </form>
           </div>
         </div>
@@ -160,103 +150,242 @@
             <h2>Minuman</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/440px-Es_teh_gelas_jumbo.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es Teh</h5>
-                <p class="card-text">Varian : Manis, Tawar, Mondo(sedikit gula).</p>
-                <p><strong>Harga : Rp2500.</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali ke pesanan</a>
+        <div class="row justify-content-center" style="margin-left: 50px; margin-right: 50px">
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/esteh.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Teh</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Krampul / Tawar</p>
+                  <p class="blog-bottom-details">Harga : Rp2500</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/warung-mbak-diah~2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es Jeruk</h5>
-                <p class="card-text">Varian : Manis, Tawar, Mondo(sedikit gula).</p>
-                <p><strong> Harga : Rp3000.</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali ke pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/esjeruk.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Jeruk</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Tawar / Manis</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/menueditor_item_ca9e505c926d49fda5eb90bfd8419828_1594380586540668394.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es Good Day</h5>
-                <p class="card-text">Varian : Hanya Coklat.</p>
-                <p><strong>Harga : Rp3000</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali ke pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/kopi.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Kopi Hitam</strong></h5>
+                  <p>Opsi : Kapal Api / Nescafe</p>
+                  <p>Varian :Tawar / Manis</p>
+                  <p class="blog-bottom-details">Harga : Rp2500</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/sementara.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es</h5>
-                <p class="card-text">Varian : .</p>
-                <p><strong>Harga : Rp</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali Ke Pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/susubendera.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Susu</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Coklat / Putih</p>
+                  <p class="blog-bottom-details">Harga : Rp3500</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/sementara.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es</h5>
-                <p class="card-text">Varian : .</p>
-                <p><strong>Harga : Rp</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali Ke Pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/hilo.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Hilo</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Coklat / Hazelnut</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/sementara.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es</h5>
-                <p class="card-text">Varian : .</p>
-                <p><strong>Harga : Rp</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali Ke Pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/goodday.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>GoodDay</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Coklat</p>
+                  <p class="blog-bottom-details">Harga : Rp300</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/sementara.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es</h5>
-                <p class="card-text">Varian : .</p>
-                <p><strong>Harga : Rp</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali Ke Pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/whitekoffie.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>White Koffie</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Coklat</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/sementara.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es</h5>
-                <p class="card-text">Varian : .</p>
-                <p><strong>Harga : Rp</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali Ke Pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/icecoffee.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Luwak Ice</strong></h5>
+                  <p>Opsi : Es</p>
+                  <p>Varian : Manis / Tanpa Gula</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/minuman/sementara.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Es</h5>
-                <p class="card-text">Varian : .</p>
-                <p><strong>Harga : Rp</strong></p>
-                <a href="#contact" class="btn btn-info text-white">Kembali Ke Pesanan</a>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/tora.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Tora Cafe</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Coklat</p>
+                  <p class="blog-bottom-details">Harga : Rp3500</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/nutrisari.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Nutrisari Jeruk</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Jeruk</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/anggur.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Nutrisari Anggur</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Anggur</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/gandaria.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Nutrisari Gandaria</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Mangga Gandaria</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/semangka.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Nutrisari Semangka</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Semangka</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card img-effect" style="color: dimgray">
+              <div class="blog-box blog-grid text-center product-box">
+                <div class="product-img">
+                  <img class="top-radius-blog" src="img/minuman/cocopandan.jpg" alt=".." width="230px" height="150px" />
+                </div>
+                <div class="blog-details-main">
+                  <hr />
+                  <h5><strong>Nutrisari Cocopandan</strong></h5>
+                  <p>Opsi : Es / Hangat</p>
+                  <p>Varian : Cocopandan</p>
+                  <p class="blog-bottom-details">Harga : Rp3000</p>
+                  <a href="#contact" class="btn btn-info text-white mb-3">Kembali ke pesanan</a>
+                </div>
               </div>
             </div>
           </div>
