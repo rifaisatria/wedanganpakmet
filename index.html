@@ -20,7 +20,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand fs-3" href="index.html">Wedangan Pak Met</a>
+        <a class="navbar-brand fs-3" href="index.html"><img src="img/wedanganlogo.png" alt="" width="170" height="50" class="d-inline-block align-center" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,20 +82,30 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="nomor" class="form-label">Nomor WhatsApp</label>
-                <input type="number" class="form-control" id="nomor" aria-describedby="nomor" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesanan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
-                <div id="passwordHelpBlock" class="form-text">Format pemesanan dengan cara : Pesanan1 jumlah, Pesanan2 jumlah dst.</div>
-              </div>
-              <button type="submit" class="btn btn-info text-white">Submit</button>
+              <fieldset>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">No.WhatsApp</label>
+                  <input type="number" class="form-control" id="phone" />
+                </div>
+                <div class="mb-3">
+                  <label for="lokasi" class="form-label">Lokasi Pengantaran</label>
+                  <input type="text" class="form-control" id="lokasi" />
+                </div>
+
+                <div class="mb-3">
+                  <label for="minuman" class="form-label">Minuman</label>
+                  <select id="minuman" class="form-select">
+                    <option>Es teh</option>
+                    <option>Teh Hangat</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </fieldset>
             </form>
           </div>
         </div>
@@ -264,7 +274,7 @@
 
     <!-- footer -->
     <footer class="bg-info text-white pb-3">
-      <p class="text-center">Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://instagram.com/rfst.x/" class="text-white fw-bold">Rifai Satria</a></p>
+      <p class="text-center">&copy; Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://instagram.com/rfst.x/" class="text-white fw-bold">Rifai Satria</a></p>
     </footer>
     <!-- akhir footer -->
   </body>
